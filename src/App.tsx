@@ -1,25 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import { Container, Row, Col } from "react-bootstrap";
+import NavBar from "./Components/navAndFooter/myNav";
+import HeaderInfo from "./Components/headerInfo/headerInfo";
+import SkillsCard from "./Components/skillsCard/skillsCard";
+import ProjectCard from "./Components/projectsCard/projectCard";
+import projectSet from "./projectObject/myProjectsObject"; 
+import MyFooter from "./Components/navAndFooter/MyFooter";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <NavBar />
+      <Container fluid>
+        <Row>
+          <Col>
+            <HeaderInfo />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <SkillsCard />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <ProjectCard project={projectSet} />
+          </Col>
+        </Row>
+      </Container>
+      <MyFooter />
+    </>
   );
 }
 
