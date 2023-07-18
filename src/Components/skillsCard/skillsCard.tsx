@@ -66,7 +66,7 @@ export default function SkillsCard() {
         </Col>
         <Col>
           <div className="darkSkills">
-            <h4>Frameworks</h4>
+            <h4>Libraries/Frameworks</h4>
             <Row>
               {frameworks.map((framework: any, idx:number) => {
                 return (

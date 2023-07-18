@@ -2,24 +2,15 @@ import pokemonAPI from "../assets/pokemon.png";
 import rememberWhen from "../assets/rememberwhen.png";
 import adviceGen from "../assets/advice.png";
 import iHub from "../assets/ihub.png";
+import CAPTAIN from "../assets/CAPTAIN.png";
+import "../App.css";
 import {
   SiCsharp,
-  SiHtml5,
-  SiCss3,
   SiReact,
   SiJavascript,
   SiTypescript,
   SiBootstrap,
-  SiSlack,
-  SiJira,
-  SiNotion,
-  SiMicrosoftazure,
-  SiGithub,
-  SiBulma,
   SiAngular,
-  SiDotnet,
-  SiAzuredevops,
-  SiC,
 } from "react-icons/si";
 import { BsServer } from "react-icons/bs";
 
@@ -73,19 +64,19 @@ const projectSet = [
     languages: "React | Javascript | Bootstrap",
     description: (
       <>
-        A fully responsive and small two-day sprint project made in React using
-        JavaScript and Bootstrap. The project involved using the{" "}
+        I built a small two-day sprint project using React, JavaScript, and
+        Bootstrap. The project utilized the{" "}
         <a
-          style={{ color: "white" }}
+          className="linkChange"
           href="https://api.adviceslip.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           advice generator API
         </a>{" "}
-        and we were given a few pictures as reference to build the project. We
-        had to get as close as we could to the exact prototype we were given.
-        However, I made a small UX change because of how the API works.
+        and included reference pictures for guidance. While aiming to match the
+        given prototype closely, I made a small UX change to accommodate the API
+        functionality.
       </>
     ),
     linkToSite: "https://jeremysadvice-generator.vercel.app",
@@ -93,6 +84,21 @@ const projectSet = [
       { icon: <SiReact size={50} color="#264de4" />, text: "React" },
       { icon: <SiJavascript size={50} color="#F0DB4F" />, text: "JavaScript" },
       { icon: <SiBootstrap size={50} color="#563d7c" />, text: "Bootstrap" },
+    ],
+  },
+  {
+    img: CAPTAIN,
+    name: "CAPTAIN",
+    languages: "Angular | TypeScript | Bootstrap | C# | SQL",
+    description:
+      "CAPTAIN is a website built by CodeStack. During my internship I got the opportunity to help develop and maintain CAPTAIN. My responsibilities for CAPTAIN included working within already made components and fix some display issues or any bug that was causing the site to break or not work properly",
+    linkToSite: "https://captaindata.org",
+    languageIcon: [
+      { icon: <SiAngular size={50} color="#dd1b16" />, text: "Angular" },
+      { icon: <SiTypescript size={50} color="#007acc" />, text: "TypeScript" },
+      { icon: <SiBootstrap size={50} color="#563d7c" />, text: "Bootstrap" },
+      { icon: <SiCsharp size={50} color="green" />, text: "C Sharp" },
+      { icon: <BsServer size={50} color="#f29111" />, text: "SQL" },
     ],
   },
 ];

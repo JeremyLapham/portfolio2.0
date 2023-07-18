@@ -1,4 +1,5 @@
 import { Row, Col, Container } from "react-bootstrap";
+import jeremy from '../../assets/Jeremy2.png'
 
 export default function HeaderInfo() {
   return (
@@ -19,7 +20,7 @@ export default function HeaderInfo() {
         </Col>
         <Col>
           <div className="darkPicture">
-            My Logo will go here
+            <img className='imageOfMe' src={jeremy} alt='Professional picture of me '/>
           </div>
         </Col>
       </Row>

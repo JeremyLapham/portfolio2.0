@@ -1,32 +1,40 @@
-:root {
-  --dark-background-color: #0D1F2D;
-  --dark-text-color: white;
-  --light-background-color: #D9D9D9;
-  --light-text-color: black;
+@font-face {
+  src: url('./assets/fonts/YesevaOne-Regular.ttf');
+  font-family:main-font;
 }
 
-body {
-  background-color: var(--dark-background-color);
-  color: var(--dark-text-color) !important;
+.body {
+  background-color: var(--background);
+  color: var(--text-primary);
   min-height: 100vh;
+  font-family: main-font;
 }
 
 .navDark {
-  background-color: #627C85;
-  color: white !important;
+  background-color: var(--navBackground);
+  color: var(--text-primary);
   width: 100vw;
   position: fixed;
   z-index: 100000000;
 }
 
+.navText {
+  color: var(--text-primary) !important;
+}
+
+.linkChange {
+  color: var(--linkColor);
+}
+
 .darkSummary,
 .darkPicture,
 .darkSkills {
-  background-color: #779CAB;
-  color: white;
+  color: var(--text-primary);
   border-radius: 30px;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding: 2rem;
+  background-image: var(--cardBG-1);
+  box-shadow: var(--card-box-shadow);
 }
 
 .darkSummary {
@@ -35,10 +43,23 @@ body {
   height: 420px;
 }
 
+.darkSummary:hover,
+.darkPicture:hover,
+.darkSkills:hover  {
+  animation: shiny 0.3s forwards;
+}
+
+.darkSummary:not(:hover),
+.darkPicture:not(:hover),
+.darkSkills:not(:hover)  {
+  animation: no-shiny 0.3s forwards;
+}
+
 .darkPicture {
   margin-top: 7rem;
   width: 450px;
   height: 420px;
+  position: relative;
 }
 
 .darkSkills {
@@ -47,47 +68,82 @@ body {
 }
 
 .darkCard {
-  background-color: #779CAB;
-  color: white;
+  background-color: var(--projectCard);
+  color: var(--text-primary);
   border-radius: 30px;
   margin-top: 2rem;
   width: 615px;
   height: 450px;
   margin-bottom: 2rem;
+  box-shadow: var(--card-box-shadow);
 }
 
 .footerDark {
-  background-color: #627C85;
+  background-color: var(--navBackground);
   color: white !important;
   width: 100%;
-  margin-top:2rem;
+  margin-top: 2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.navLight {
-  background-color: #898f91;
-  color: rgb(0, 0, 0) !important;
-  margin-left: -12px;
-  width: 100vw;
+.imageOfMe {
+  width: 350px;
+  object-fit: contain;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
+@keyframes shiny {
+  0% {
+    background-image: var(--cardBG-1);
+  }
+  
+  20% {
+    background-image:var(--cardBG-2);
+  } 
 
-.lightMode {
-  background-color: var(--light-background-color);
-  color: var(--light-text-color) !important;
-  min-height: 100vh;
+  40% {
+    background-image: var(--cardBG-3);
+  }
+
+  60% {
+    background-image: var(--cardBG-4);
+  }
+
+  80% {
+    background-image: var(--cardBG-5);
+  }
+
+  100% {
+    background-image: var(--cardBG-6);
+    box-shadow: var(--card-box-shadow-hover);
+  }
+}
+
+@keyframes no-shiny {
+  0% {
+    background-image: var(--cardBG-6);
+    box-shadow: var(--card-box-shadow-hover);
+  }
+  
+  20% {
+    background-image: var(--cardBG-5);
+  }
+  
+  40% {
+    background-image: var(--cardBG-4);
+  }
+  
+  60% {
+    background-image: var(--cardBG-3);
+  } 
+  
+  80% {
+    background-image: var(--cardBG-2);
+  }
+
+  100% {
+  background-image: var(--cardBG-1);
+  }
 }
