@@ -49,13 +49,13 @@ export default function SkillsCard() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col lg={4} md={12} sm={4} className='d-flex justify-content-center'>
           <div className="darkSkills">
             <h4>Languages</h4>
             <Row>
               {languages.map((language: any, idx:number) => {
                 return (
-                  <Col key={idx} lg={4} className='d-flex flex-column align-items-center'>
+                  <Col key={idx} lg={4} md={2} sm={2} className='d-flex flex-column align-items-center justify-content-center icon-width'>
                     {language.icon}
                     <p>{language.text}</p>
                   </Col>
@@ -64,28 +64,28 @@ export default function SkillsCard() {
             </Row>
           </div>
         </Col>
-        <Col>
+        <Col lg={4} md={12} className='d-flex justify-content-center'>
           <div className="darkSkills">
             <h4>Libraries/Frameworks</h4>
             <Row>
               {frameworks.map((framework: any, idx:number) => {
                 return (
-                  <Col key={idx} lg={4} className='d-flex flex-column align-items-center'>
+                  <Col key={idx} lg={4} md={2} sm={2} className='d-flex flex-column align-items-center justify-content-center icon-width'>
                     {framework.icon}
-                    <p>{framework.text}</p>
+                    <p style={{fontSize:15}}>{framework.text}</p>
                   </Col>
                 );
               })}
             </Row>
           </div>
         </Col>
-        <Col>
+        <Col lg={4} md={12} className='d-flex justify-content-center'>
           <div className="darkSkills">
             <h4>Production</h4>
             <Row>
               {productions.map((production: any, idx:number) => {
                 return (
-                  <Col key={idx} lg={4} className='d-flex flex-column align-items-center'>
+                  <Col key={idx} lg={4} md={2} sm={2} className='d-flex flex-column align-items-center justify-content-center icon-width'>
                     {production.icon}
                     <p>{production.text}</p>
                   </Col>

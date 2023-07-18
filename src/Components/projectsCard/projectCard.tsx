@@ -11,11 +11,12 @@ export default function ProjectCard({ project }: { project: any }) {
             <Col
               lg={isOdd && project.length === index + 1 ? 12 : 6}
               key={index}
-              className={
-                isOdd && project.length === index + 1
-                  ? "d-flex justify-content-center"
-                  : ""
-              }
+              // className={
+              //   isOdd && project.length === index + 1
+              //     ? "d-flex justify-content-center"
+              //     : ""
+              // }
+              className='d-flex justify-content-center'
             >
               <div className="darkCard">
                 <div className="profile-card">

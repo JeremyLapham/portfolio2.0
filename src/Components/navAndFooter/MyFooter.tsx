@@ -9,13 +9,8 @@ export default function MyFooter() {
         expand="lg"
       >
         <Container>
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-lg`} />
-          <h3 className='navText'>Jeremy Lapham</h3>
-          <Offcanvas.Body>
-            <Nav className="justify-content-end flex-grow-1 pe-3">
-              <h3 className='navText'>Jr. Web Developer</h3>
-            </Nav>
-          </Offcanvas.Body>
+          <h3 className="navText">Jeremy Lapham</h3>
+          <h3 className="navText">Jr. Web Developer</h3>
         </Container>
       </Navbar>
     </>

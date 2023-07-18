@@ -5,11 +5,11 @@ export default function HeaderInfo() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col lg={8} md={12}>
           <div className="darkSummary">
             <h1>Jeremy Lapham - Jr. Web Developer</h1>
             <br />
-            <h3>
+            <h3 className='text-font'>
               Personally love to build in the Frontend using languages such as
               HTML, CSS, Javascript and Typescript and even using a framework
               such as React or Angular as a tool for building. I also build
@@ -18,7 +18,7 @@ export default function HeaderInfo() {
             </h3>
           </div>
         </Col>
-        <Col>
+        <Col lg={4} md={12}  className='d-flex justify-content-center'>
           <div className="darkPicture">
             <img className='imageOfMe' src={jeremy} alt='Professional picture of me '/>
           </div>

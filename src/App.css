@@ -1,6 +1,12 @@
+@import './animation.css';
+
 @font-face {
   src: url('./assets/fonts/YesevaOne-Regular.ttf');
-  font-family:main-font;
+  font-family: main-font;
+}
+@font-face {
+  src: url('./assets/fonts/JosefinSans-VariableFont_wght.ttf');
+  font-family: text-font;
 }
 
 .body {
@@ -39,32 +45,36 @@
 
 .darkSummary {
   margin-top: 7rem;
-  width: 800px;
+  width: 850px;
   height: 420px;
+}
+
+.text-font{ 
+  font-family: text-font;
 }
 
 .darkSummary:hover,
 .darkPicture:hover,
-.darkSkills:hover  {
+.darkSkills:hover {
   animation: shiny 0.3s forwards;
 }
 
 .darkSummary:not(:hover),
 .darkPicture:not(:hover),
-.darkSkills:not(:hover)  {
+.darkSkills:not(:hover) {
   animation: no-shiny 0.3s forwards;
 }
 
 .darkPicture {
   margin-top: 7rem;
   width: 450px;
-  height: 420px;
+  aspect-ratio: 1 / 1;
   position: relative;
 }
 
 .darkSkills {
   width: 400px;
-  min-height: 250px;
+  aspect-ratio: 16/9;
 }
 
 .darkCard {
@@ -94,56 +104,52 @@
   transform: translateX(-50%);
 }
 
-@keyframes shiny {
-  0% {
+@media screen and (max-width: 1024px) and (min-width: 320px) {
+  .darkSummary,
+  .darkPicture,
+  .darkSkills {
+    color: var(--text-primary);
+    border-radius: 30px;
+    margin-top: 2rem;
+    padding: 2rem;
     background-image: var(--cardBG-1);
+    box-shadow: var(--card-box-shadow);
+  }
+
+  .darkSummary {
+    margin-top: 7rem;
+    width: auto;
+    height: auto;
   }
   
-  20% {
-    background-image:var(--cardBG-2);
-  } 
-
-  40% {
-    background-image: var(--cardBG-3);
+  .darkPicture {
+    /* margin: 2rem 10rem; */
+    width: 300px;
+    aspect-ratio: 1 / 1;
+    position: relative;
   }
-
-  60% {
-    background-image: var(--cardBG-4);
+  
+  .imageOfMe {
+    width: 250px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
-
-  80% {
-    background-image: var(--cardBG-5);
+  
+  .darkSkills {
+    width: 600px;
+    aspect-ratio: 16/5;
   }
-
-  100% {
-    background-image: var(--cardBG-6);
-    box-shadow: var(--card-box-shadow-hover);
+  
+  .darkCard {
+    width: auto;
+    height: auto;
   }
 }
-
-@keyframes no-shiny {
-  0% {
-    background-image: var(--cardBG-6);
-    box-shadow: var(--card-box-shadow-hover);
-  }
-  
-  20% {
-    background-image: var(--cardBG-5);
-  }
-  
-  40% {
-    background-image: var(--cardBG-4);
-  }
-  
-  60% {
-    background-image: var(--cardBG-3);
-  } 
-  
-  80% {
-    background-image: var(--cardBG-2);
-  }
-
-  100% {
-  background-image: var(--cardBG-1);
-  }
+@media screen and (max-width: 600px) and (min-width: 320px) {
+.icon-width {
+  width: 150px;
+}
 }

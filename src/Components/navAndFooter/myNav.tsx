@@ -32,26 +32,30 @@ export default function MyNav({ lightDarkButton }: { lightDarkButton: any }) {
               {lightDarkButton()}
             </div>
           </Navbar.Brand>
-          <Nav className="justify-content-end flex-grow-1 pe-3 navText">
-            <Nav.Link className="navText">jeremyslapham@gmail.com</Nav.Link>
-            <Nav.Link
-              href="https://github.com/JeremyLapham"
-              target="_blank"
-              title="My Github"
-            >
-              <SiGithub size={30} className="navText" />
-            </Nav.Link>
-            <Nav.Link
-              href="https://www.linkedin.com/in/jeremylapham/"
-              target="_blank"
-              title="My LinkedIn"
-            >
-              <SiLinkedin size={30} className="navText" />
-            </Nav.Link>
-            <Nav.Link onClick={handleShow} target="_blank">
-              <BiNews size={35} className="navText" title="My Resume" />
-            </Nav.Link>
-          </Nav>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <hr />
+            <Nav className="justify-content-end flex-grow-1 pe-3 navText">
+              <Nav.Link className="navText">jeremyslapham@gmail.com</Nav.Link>
+              <Nav.Link
+                href="https://github.com/JeremyLapham"
+                target="_blank"
+                title="My Github"
+              >
+                <SiGithub size={30} className="navText" />
+              </Nav.Link>
+              <Nav.Link
+                href="https://www.linkedin.com/in/jeremylapham/"
+                target="_blank"
+                title="My LinkedIn"
+              >
+                <SiLinkedin size={30} className="navText" />
+              </Nav.Link>
+              <Nav.Link onClick={handleShow} target="_blank">
+                <BiNews size={35} className="navText" title="My Resume" />
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
       <Modal size="lg" show={show} onHide={handleClose}>
