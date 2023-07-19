@@ -24,7 +24,7 @@ export default function SkillsCard() {
     { icon: <SiJavascript size={50} color="#F0DB4F" />, text: "JavaScript" },
     { icon: <SiHtml5 size={50} color="#e34c26" />, text: "HTML" },
     { icon: <SiCss3 size={50} color="#264de4" />, text: "CSS" },
-    { icon: <SiCsharp size={50} color='green' />, text: "C Sharp" },
+    { icon: <SiCsharp size={50} color='green' />, text: "C#" },
     { icon: <BsServer size={50} color='#f29111'/>, text: "SQL" },
     { icon: <SiTypescript size={50} color='#007acc' />, text: "TypeScript" }
   ];
@@ -49,15 +49,15 @@ export default function SkillsCard() {
   return (
     <Container>
       <Row>
-        <Col lg={4} md={12} sm={4} className='d-flex justify-content-center'>
+        <Col lg={4} md={12} className='d-flex justify-content-center'>
           <div className="darkSkills">
             <h4>Languages</h4>
-            <Row>
+            <Row className='d-flex justify-content-center'>
               {languages.map((language: any, idx:number) => {
                 return (
                   <Col key={idx} lg={4} md={2} sm={2} className='d-flex flex-column align-items-center justify-content-center icon-width'>
                     {language.icon}
-                    <p>{language.text}</p>
+                    <p className='text-font'>{language.text}</p>
                   </Col>
                 );
               })}
@@ -67,12 +67,12 @@ export default function SkillsCard() {
         <Col lg={4} md={12} className='d-flex justify-content-center'>
           <div className="darkSkills">
             <h4>Libraries/Frameworks</h4>
-            <Row>
+            <Row  className='d-flex justify-content-center'>
               {frameworks.map((framework: any, idx:number) => {
                 return (
                   <Col key={idx} lg={4} md={2} sm={2} className='d-flex flex-column align-items-center justify-content-center icon-width'>
                     {framework.icon}
-                    <p style={{fontSize:15}}>{framework.text}</p>
+                    <p className='text-font'>{framework.text}</p>
                   </Col>
                 );
               })}
@@ -82,12 +82,12 @@ export default function SkillsCard() {
         <Col lg={4} md={12} className='d-flex justify-content-center'>
           <div className="darkSkills">
             <h4>Production</h4>
-            <Row>
+            <Row  className='d-flex justify-content-center'>
               {productions.map((production: any, idx:number) => {
                 return (
                   <Col key={idx} lg={4} md={2} sm={2} className='d-flex flex-column align-items-center justify-content-center icon-width'>
                     {production.icon}
-                    <p>{production.text}</p>
+                    <p className='text-font'>{production.text}</p>
                   </Col>
                 );
               })}

@@ -16,7 +16,7 @@ export default function ProjectCard({ project }: { project: any }) {
               //     ? "d-flex justify-content-center"
               //     : ""
               // }
-              className='d-flex justify-content-center'
+              className="d-flex justify-content-center"
             >
               <div className="darkCard">
                 <div className="profile-card">
@@ -34,10 +34,10 @@ export default function ProjectCard({ project }: { project: any }) {
                             return (
                               <Col
                                 key={idx}
-                                className="d-flex flex-column align-items-center"
+                                className={`d-flex flex-column align-items-center ${icon.class}`}
                               >
-                                {icon.icon}
-                                {icon.text}
+                                <div className={`${icon.class}`}>{icon.icon}</div>
+                                <div className={`text-font ${icon.class}`}>{icon.text}</div>
                               </Col>
                             );
                           }

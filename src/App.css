@@ -4,6 +4,7 @@
   src: url('./assets/fonts/YesevaOne-Regular.ttf');
   font-family: main-font;
 }
+
 @font-face {
   src: url('./assets/fonts/JosefinSans-VariableFont_wght.ttf');
   font-family: text-font;
@@ -49,7 +50,7 @@
   height: 420px;
 }
 
-.text-font{ 
+.text-font {
   font-family: text-font;
 }
 
@@ -105,6 +106,7 @@
 }
 
 @media screen and (max-width: 1024px) and (min-width: 320px) {
+
   .darkSummary,
   .darkPicture,
   .darkSkills {
@@ -121,14 +123,13 @@
     width: auto;
     height: auto;
   }
-  
+
   .darkPicture {
-    /* margin: 2rem 10rem; */
     width: 300px;
     aspect-ratio: 1 / 1;
     position: relative;
   }
-  
+
   .imageOfMe {
     width: 250px;
     object-fit: contain;
@@ -137,19 +138,26 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .darkSkills {
     width: 600px;
     aspect-ratio: 16/5;
   }
-  
+
   .darkCard {
     width: auto;
     height: auto;
   }
 }
-@media screen and (max-width: 600px) and (min-width: 320px) {
-.icon-width {
-  width: 150px;
+
+@media screen and (max-width: 700px) and (min-width: 375px) {
+  .icon-width {
+    width: 150px;
+  }
 }
+
+@media screen and (max-width: 375px) and (min-width: 300px) {
+  .icon-width {
+    width: 140px;
+  }
 }
