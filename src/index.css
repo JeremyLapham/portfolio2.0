@@ -14,30 +14,30 @@ code {
 
 :root {
   --background: #112635;
-  --navBackground: #627C85;
+  --navBackground: #4d6168;
   --text-primary: rgb(255, 255, 255);
-  --cardBG-1: linear-gradient(235deg, #ffffff 0%, #779CAB 25%);
-  --cardBG-2: linear-gradient(215deg, #ffffff 0%, #779CAB 50%);
-  --cardBG-3: linear-gradient(195deg, #ffffff 0%, #779CAB 75%);
-  --cardBG-4: linear-gradient(175deg, #ffffff 0%, #779CAB 75%);
-  --cardBG-5: linear-gradient(155deg, #ffffff 0%, #779CAB 50%);
-  --cardBG-6: linear-gradient(135deg, #ffffff 0%, #779CAB 25%);
-  --projectCard: #779CAB;
+  --cardBG-1: linear-gradient(235deg, #ffffff 0%, #4a6f7e 25%);
+  --cardBG-2: linear-gradient(215deg, #ffffff 0%, #4a6f7e 50%);
+  --cardBG-3: linear-gradient(195deg, #ffffff 0%, #4a6f7e 75%);
+  --cardBG-4: linear-gradient(175deg, #ffffff 0%, #4a6f7e 75%);
+  --cardBG-5: linear-gradient(155deg, #ffffff 0%, #4a6f7e 50%);
+  --cardBG-6: linear-gradient(135deg, #ffffff 0%, #4a6f7e 25%);
+  --projectCard: #4a6f7e;
   --card-box-shadow: -12px 12px 12px rgb(255, 255, 255);
   --card-box-shadow-hover: 12px 12px 12px rgb(255, 255, 255);
 }
 
 [data-theme='light'] {
-  --background: #D9D9D9;
+  --background: #ffffff;
   --navBackground: #B4B1B7;
   --text-primary: rgb(3, 3, 3);
-  --cardBG-1: linear-gradient(235deg, #2c2c2c 0%, #A7A5AD 25%);
-  --cardBG-2: linear-gradient(215deg, #2c2c2c 0%, #A7A5AD 50%);
-  --cardBG-3: linear-gradient(195deg, #2c2c2c 0%, #A7A5AD 75%);
-  --cardBG-4: linear-gradient(175deg, #2c2c2c 0%, #A7A5AD 75%);
-  --cardBG-5: linear-gradient(155deg, #2c2c2c 0%, #A7A5AD 50%);
-  --cardBG-6: linear-gradient(135deg, #2c2c2c 0%, #A7A5AD 25%);
-  --projectCard: #A7A5AD;
+  --cardBG-1: linear-gradient(235deg, #2c2c2c 0%, #D9D9D9 25%);
+  --cardBG-2: linear-gradient(215deg, #2c2c2c 0%, #D9D9D9 50%);
+  --cardBG-3: linear-gradient(195deg, #2c2c2c 0%, #D9D9D9 75%);
+  --cardBG-4: linear-gradient(175deg, #2c2c2c 0%, #D9D9D9 75%);
+  --cardBG-5: linear-gradient(155deg, #2c2c2c 0%, #D9D9D9 50%);
+  --cardBG-6: linear-gradient(135deg, #2c2c2c 0%, #D9D9D9 25%);
+  --projectCard: #D9D9D9;
   --card-box-shadow: -12px 12px 12px rgb(0, 0, 0);
   --card-box-shadow-hover: 12px 12px 12px rgb(255, 255, 255);
 }

@@ -10,11 +10,7 @@ export default function HeaderInfo() {
             <h1>Jeremy Lapham - Jr. Web Developer</h1>
             <br />
             <h3 className='text-font'>
-              Personally love to build in the Frontend using languages such as
-              HTML, CSS, Javascript and Typescript and even using a framework
-              such as React or Angular as a tool for building. I also build
-              using Bootstrap with some knowledge of Tailwind CSS. I am capable
-              to work in Backend using C# or Azure SQL Databases
+            I'm a fairly skilled frontend developer proficient in HTML, CSS, JavaScript, and TypeScript, with expertise in React and Angular. I also have backend experience in C# and Azure SQL Databases. Passionate about creating visually appealing and responsive web applications, I strive to deliver high-quality products that make a positive impact
             </h3>
           </div>
         </Col>

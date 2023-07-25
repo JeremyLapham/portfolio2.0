@@ -161,3 +161,25 @@
     width: 140px;
   }
 }
+/* 
+@media (prefers-color-scheme: dark) {
+  --background: #112635;
+  --navBackground: #627C85;
+  --text-primary: rgb(255, 255, 255);
+  --cardBG-1: linear-gradient(235deg, #ffffff 0%, #779CAB 25%);
+  --cardBG-2: linear-gradient(215deg, #ffffff 0%, #779CAB 50%);
+  --cardBG-3: linear-gradient(195deg, #ffffff 0%, #779CAB 75%);
+  --cardBG-4: linear-gradient(175deg, #ffffff 0%, #779CAB 75%);
+  --cardBG-5: linear-gradient(155deg, #ffffff 0%, #779CAB 50%);
+  --cardBG-6: linear-gradient(135deg, #ffffff 0%, #779CAB 25%);
+  --projectCard: #779CAB;
+  --card-box-shadow: -12px 12px 12px rgb(255, 255, 255);
+  --card-box-shadow-hover: 12px 12px 12px rgb(255, 255, 255);
+
+  .body {
+    background-color: #112635;
+    color: var(--text-primary);
+    min-height: 100vh;
+    font-family: main-font;
+  }
+}  */
