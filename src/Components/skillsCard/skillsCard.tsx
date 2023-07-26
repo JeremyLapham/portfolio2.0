@@ -24,7 +24,7 @@ export default function SkillsCard() {
     { icon: <SiJavascript size={50} color="#F0DB4F" />, text: "JavaScript" },
     { icon: <SiHtml5 size={50} color="#e34c26" />, text: "HTML" },
     { icon: <SiCss3 size={50} color="#264de4" />, text: "CSS" },
-    { icon: <SiCsharp size={50} color='green' />, text: "C#" },
+    { icon: <SiCsharp size={50} color='green' style={{border: '1px solid white', borderRadius: 100, backgroundColor: 'white'}} />, text: "C#" },
     { icon: <BsServer size={50} color='#f29111'/>, text: "SQL" },
     { icon: <SiTypescript size={50} color='#007acc' />, text: "TypeScript" }
   ];
