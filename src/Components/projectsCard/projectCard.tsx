@@ -2,14 +2,12 @@ import { Col, Container, Row } from "react-bootstrap";
 import "./projectCard.css";
 
 export default function ProjectCard({ project }: { project: any }) {
-  let isOdd = project.length % 2 == 1;
   return (
     <Container>
       <Row>
         {project.map((projectItem: any, index: number) => {
           return (
             <Col
-              lg={isOdd && project.length === index + 1 ? 12 : 6}
               key={index}
               className="d-flex justify-content-center"
             >
@@ -29,10 +27,10 @@ export default function ProjectCard({ project }: { project: any }) {
                             return (
                               <Col
                                 key={idx}
-                                className={`d-flex flex-column align-items-center ${icon.class}`}
+                                className={`d-flex flex-column align-items-center justify-content-between`}
                               >
-                                <div className={`${icon.class}`}>{icon.icon}</div>
-                                <div className={`text-font ${icon.class}`}>{icon.text}</div>
+                                <div>{icon.icon}</div>
+                                <div className={`text-font`}>{icon.text}</div>
                               </Col>
                             );
                           }

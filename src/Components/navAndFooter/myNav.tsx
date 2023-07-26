@@ -1,15 +1,10 @@
 import {
   Container,
   Navbar,
-  Offcanvas,
-  DropdownButton,
   Nav,
-  Dropdown,
-  ButtonGroup,
   Modal,
   ModalHeader,
-  ModalBody,
-  NavDropdown,
+  ModalBody
 } from "react-bootstrap";
 import resume from "../../assets/Resume.png";
 import { SiGithub, SiLinkedin } from "react-icons/si";

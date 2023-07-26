@@ -16,7 +16,7 @@ export default function HeaderInfo() {
         </Col>
         <Col lg={4} md={12}  className='d-flex justify-content-center'>
           <div className="darkPicture">
-            <img className='imageOfMe' src={jeremy} alt='Professional picture of me '/>
+            <img className='imageOfMe' src={jeremy} alt='Professional picture of me'/>
           </div>
         </Col>
       </Row>

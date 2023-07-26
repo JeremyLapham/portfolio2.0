@@ -36,7 +36,6 @@
 	font-family: main-font;
 }
 
-
 .profile-card:hover header a:before {
 	opacity: 1;
 }
