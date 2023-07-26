@@ -7,10 +7,7 @@ export default function ProjectCard({ project }: { project: any }) {
       <Row>
         {project.map((projectItem: any, index: number) => {
           return (
-            <Col
-              key={index}
-              className="d-flex justify-content-center"
-            >
+            <Col key={index} className="d-flex justify-content-center">
               <div className="darkCard">
                 <div className="profile-card">
                   <div className="profile-bio">
@@ -18,7 +15,30 @@ export default function ProjectCard({ project }: { project: any }) {
                       <header>
                         <img src={projectItem.img} alt="Project" />
                       </header>
-                      <h1>{projectItem.name}</h1>
+                      <Row>
+                        <Col lg={12}>
+                          <h1>{projectItem.name}</h1>
+                        </Col>
+                        <Col
+                          lg={12}
+                          style={{ position: "absolute" }}
+                          className="d-flex flex-column align-items-end"
+                        >
+                          <a
+                            title={`${projectItem.projectRepo?.title ?? null}`}
+                            href={projectItem.projectRepo?.repoLink ?? null}
+                            className="navText"
+                            target="_blank"
+                          >
+                            <h3 style={{ marginTop: 25, marginLeft: 50 }}>
+                              {projectItem.projectRepo?.github?.icon ?? null}
+                            </h3>
+                            <h6>
+                              {projectItem.projectRepo?.github?.text ?? null}
+                            </h6>
+                          </a>
+                        </Col>
+                      </Row>
                       <h2>{projectItem.languages}</h2>
                       <p>{projectItem.description}</p>
                       <Row>

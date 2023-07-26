@@ -4,7 +4,7 @@ import {
   Nav,
   Modal,
   ModalHeader,
-  ModalBody
+  ModalBody,
 } from "react-bootstrap";
 import resume from "../../assets/Resume.png";
 import { SiGithub, SiLinkedin } from "react-icons/si";
@@ -53,10 +53,12 @@ export default function MyNav({ lightDarkButton }: { lightDarkButton: any }) {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Modal size="lg" show={show} onHide={handleClose}>
-        <ModalHeader className="modalBody" closeButton></ModalHeader>
+      <Modal size="lg" className="mt-5" show={show} onHide={handleClose}>
+        <ModalHeader closeButton></ModalHeader>
         <ModalBody className="modalBody">
-          <iframe className="resume" src={resume} />
+          <a href={resume} target="_blank" title="Open resume in a new tab">
+            <img className="resume" src={resume} />
+          </a>
         </ModalBody>
       </Modal>
     </>

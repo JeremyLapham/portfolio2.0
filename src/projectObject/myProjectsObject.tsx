@@ -11,10 +11,11 @@ import {
   SiTypescript,
   SiBootstrap,
   SiAngular,
+  SiGithub,
 } from "react-icons/si";
 import { BsServer } from "react-icons/bs";
 
-const projectSet = [
+const projectSet= [
   {
     img: pokemonAPI,
     name: "Pokemon API",
@@ -27,6 +28,14 @@ const projectSet = [
       { icon: <SiJavascript size={50} color="#F0DB4F" />, text: "JavaScript" },
       { icon: <SiBootstrap size={50} color="#563d7c" />, text: "Bootstrap" },
     ],
+    projectRepo: {
+      github: {
+        icon: <SiGithub size={40} className="navText" />,
+        text: "Pokemon Repo",
+      },
+      repoLink: "https://github.com/JeremyLapham/ReactRebuildPokemonAPI",
+      title: "Jeremy's Pokemon Github repository",
+    },
   },
   {
     img: rememberWhen,
@@ -39,24 +48,30 @@ const projectSet = [
       { icon: <SiReact size={50} color="#264de4" />, text: "React" },
       { icon: <SiTypescript size={50} color="#007acc" />, text: "Typescript" },
       { icon: <SiBootstrap size={50} color="#563d7c" />, text: "Bootstrap" },
-      { icon: <SiCsharp size={50} color="green" style={{border: '1px solid white', borderRadius: 100, backgroundColor: 'white'}} />, text: "C Sharp" },
+      {
+        icon: (
+          <SiCsharp
+            size={50}
+            color="green"
+            style={{
+              border: "1px solid white",
+              borderRadius: 100,
+              backgroundColor: "white",
+            }}
+          />
+        ),
+        text: "C Sharp",
+      },
       { icon: <BsServer size={50} color="#f29111" />, text: "SQL" },
     ],
-  },
-  {
-    img: iHub,
-    name: "IHub",
-    languages: "React | TypeScript | Bootstrap | C# | SQL ",
-    description:
-      "IHub is a website built for the San Joaquin county. During my internship I got the opportunity to help develop and maintain IHub. My responsibilities included building reuseable components to allow future developers to easily understand and use the components when needed. Also fixed design issues and bugs",
-    linkToSite: "https://www.ihubsj.org",
-    languageIcon: [
-      { icon: <SiReact size={50} color="#264de4" />, text: "React" },
-      { icon: <SiTypescript size={50} color="#007acc" />, text: "Typescript" },
-      { icon: <SiBootstrap size={50} color="#563d7c" />, text: "Bootstrap" },
-      { icon: <SiCsharp size={50} color="green" style={{border: '1px solid white', borderRadius: 100, backgroundColor: 'white'}} />, text: "C Sharp" },
-      { icon: <BsServer size={50} color="#f29111" />, text: "SQL" },
-    ],
+    projectRepo: {
+      github: {
+        icon: <SiGithub size={40} className="navText" />,
+        text: "Remember Repo",
+      },
+      repoLink: "https://github.com/JeremyLapham/rememberwhenvite",
+      title: "Jeremy's Remember When Frontend Github repository",
+    },
   },
   {
     img: adviceGen,
@@ -85,6 +100,43 @@ const projectSet = [
       { icon: <SiJavascript size={50} color="#F0DB4F" />, text: "JavaScript" },
       { icon: <SiBootstrap size={50} color="#563d7c" />, text: "Bootstrap" },
     ],
+    projectRepo: {
+      github: {
+        icon: <SiGithub size={40} className="navText" />,
+        text: "Advice Repo",
+      },
+      repoLink: "https://github.com/JeremyLapham/Advice-Generator",
+      title: "Jeremy's Advice Generator Github repository",
+    },
+  },
+  {
+    img: iHub,
+    name: "IHub",
+    languages: "React | TypeScript | Bootstrap | C# | SQL ",
+    description:
+      "IHub is a website built for the San Joaquin county. During my internship I got the opportunity to help develop and maintain IHub. My responsibilities included building reuseable components to allow future developers to easily understand and use the components when needed. Also fixed design issues and bugs",
+    linkToSite: "https://www.ihubsj.org",
+    languageIcon: [
+      { icon: <SiReact size={50} color="#264de4" />, text: "React" },
+      { icon: <SiTypescript size={50} color="#007acc" />, text: "Typescript" },
+      { icon: <SiBootstrap size={50} color="#563d7c" />, text: "Bootstrap" },
+      {
+        icon: (
+          <SiCsharp
+            size={50}
+            color="green"
+            style={{
+              border: "1px solid white",
+              borderRadius: 100,
+              backgroundColor: "white",
+            }}
+          />
+        ),
+        text: "C Sharp",
+      },
+      { icon: <BsServer size={50} color="#f29111" />, text: "SQL" },
+    ],
+    projectRepo: null
   },
   {
     img: CAPTAIN,
@@ -97,9 +149,23 @@ const projectSet = [
       { icon: <SiAngular size={50} color="#dd1b16" />, text: "Angular" },
       { icon: <SiTypescript size={50} color="#007acc" />, text: "TypeScript" },
       { icon: <SiBootstrap size={50} color="#563d7c" />, text: "Bootstrap" },
-      { icon: <SiCsharp size={50} color="green" style={{border: '1px solid white', borderRadius: 100, backgroundColor: 'white'}} />, text: "C Sharp" },
+      {
+        icon: (
+          <SiCsharp
+            size={50}
+            color="green"
+            style={{
+              border: "1px solid white",
+              borderRadius: 100,
+              backgroundColor: "white",
+            }}
+          />
+        ),
+        text: "C Sharp",
+      },
       { icon: <BsServer size={50} color="#f29111" />, text: "SQL" },
     ],
+    projectRepo: null
   },
 ];
 
