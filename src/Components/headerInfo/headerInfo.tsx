@@ -10,7 +10,7 @@ export default function HeaderInfo() {
             <h1>Jeremy Lapham - Jr. Web Developer</h1>
             <br />
             <h3 className='text-font'>
-            I'm a fairly skilled frontend developer proficient in HTML, CSS, JavaScript, and TypeScript, with expertise in React and Angular. I also have backend experience in C# and Azure SQL Databases. Passionate about creating visually appealing and responsive web applications, I strive to deliver high-quality products that make a positive impact
+            I'm a skilled frontend developer proficient in HTML, CSS, JavaScript, and TypeScript, with expertise in React and Angular. I also have backend experience in C# and SQL Database. Passionate about creating visually appealing and responsive web applications. I strive to deliver high-quality products that make a positive impact.
             </h3>
           </div>
         </Col>

@@ -6,7 +6,7 @@ import NavBar from "./Components/navAndFooter/myNav";
 import HeaderInfo from "./Components/headerInfo/headerInfo";
 import SkillsCard from "./Components/skillsCard/skillsCard";
 import ProjectCard from "./Components/projectsCard/projectCard";
-import projectSet from "./projectObject/myProjectsObject";
+import projectSet from "./objectsForIcons/myProjectsObject";
 import MyFooter from "./Components/navAndFooter/MyFooter";
 import { useState } from "react";
 import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
