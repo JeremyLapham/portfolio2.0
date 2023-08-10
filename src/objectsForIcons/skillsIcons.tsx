@@ -6,15 +6,15 @@ import {
     SiJavascript,
     SiTypescript,
     SiBootstrap,
-    SiSlack,
     SiJira,
-    SiNotion,
     SiMicrosoftazure,
     SiGithub,
     SiBulma,
     SiAngular,
     SiDotnet,
     SiAzuredevops,
+    SiVisualstudiocode,
+    SiVisualstudio
   } from "react-icons/si";
   import { BsServer } from "react-icons/bs";
 
@@ -36,9 +36,9 @@ export const frameworks = [
     { icon: <SiDotnet size={50} color="#5d2d91" />, text: ".Net" },
   ];
 export const productions = [
-    // { icon: <SiSlack size={50} color="#E01E5A" />, text: "Slack" },
+    { icon: <SiVisualstudio size={50} color="purple" />, text: "Visual Studio" },
     { icon: <SiJira size={50} color="#0052CC" />, text: "Jira" },
-    // { icon: <SiNotion size={50} color="white" />, text: "Notion" },
+    { icon: <SiVisualstudiocode size={50} color="blue" />, text: "Visual Studio Code" },
     { icon: <SiMicrosoftazure size={50} color="#008AD7" />, text: "Azure" },
     { icon: <SiGithub size={50} color="white" />, text: "GitHub" },
     { icon: <SiAzuredevops size={50} color="#008AD7" />, text: "DevOps" },
